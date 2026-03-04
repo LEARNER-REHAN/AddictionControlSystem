@@ -1,0 +1,145 @@
+/* ===== GLOBAL LAYOUT ===== */
+
+.dashboard {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 15px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 6px 4px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #2563eb;
+}
+
+.nav-links li.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.nav-links li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+.welcome:hover {
+  color: #2563eb;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.logout-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.main-content {
+  padding: 60px 80px;
+}
+
+.main-content h1 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+/* ===== HOME CARDS ===== */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card-box {
+  padding: 30px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.card-box h3 {
+  color: #64748b;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.card-box p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2563eb;
+}

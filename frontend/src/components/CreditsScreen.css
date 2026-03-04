@@ -1,0 +1,10 @@
+.credits-screen {
+  height: 100vh;
+  background: black;
+  color: #00ff88;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+
+  padding: 20px;
+  text-align: left;
+}

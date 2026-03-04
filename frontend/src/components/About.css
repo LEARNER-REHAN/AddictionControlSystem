@@ -1,0 +1,134 @@
+.about-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* TEXT */
+
+.about-container h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #1e293b;
+}
+
+.about-container p {
+  margin-bottom: 15px;
+  color: #475569;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* FEATURES */
+
+.about-features {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-box {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+
+  transition: all 0.25s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box h4 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* TEAM */
+
+.team-heading {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* CARD */
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* COOL HOVER */
+
+.team-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+
+/* IMAGE */
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #2563eb;
+
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* BLUE GLOW RING */
+
+.team-card:hover img {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.2),
+    0 0 15px rgba(37, 99, 235, 0.5),
+    0 0 30px rgba(37, 99, 235, 0.3);
+}
+/* INFO */
+
+.team-info h3 {
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.role {
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

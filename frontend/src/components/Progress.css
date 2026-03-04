@@ -1,0 +1,51 @@
+.progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.progress-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.progress-big-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+}
+
+.weekly-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 30px;
+  background: #2563eb;
+  border-radius: 6px;
+}
+
+.relapse-section li {
+  margin-bottom: 8px;
+}

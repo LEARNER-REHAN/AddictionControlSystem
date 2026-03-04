@@ -1,0 +1,134 @@
+/* ===== PAGE ===== */
+
+.goals-page h1 {
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ===== INPUT SECTION ===== */
+
+.goal-input-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.goal-input-wrapper input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.goal-input-wrapper input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.goal-input-wrapper button {
+  padding: 14px 25px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.goal-input-wrapper button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== GOALS LIST ===== */
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.goal-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Completed style */
+.goal-card.completed {
+  background: #f0f9ff;
+  border-left: 5px solid #2563eb;
+}
+
+/* Left Side */
+
+.goal-left h3 {
+  margin: 0 0 8px 0;
+}
+
+.goal-left p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Status colors */
+
+.status-progress {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.status-done {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+/* Right Side */
+
+.goal-right {
+  display: flex;
+  gap: 12px;
+}
+
+.complete-btn,
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.complete-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
