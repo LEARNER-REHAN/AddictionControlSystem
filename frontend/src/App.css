@@ -5,21 +5,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: linear-gradient(135deg, #eef2ff, #f8fafc);
+
   color: #1e293b;
   text-align: center;
   padding: 20px;
+
+  animation: landingReveal 1.4s ease forwards;
 }
+
+/* Content */
 
 .landing-content {
   max-width: 650px;
+  animation: slideUp 0.9s ease;
 }
+
+/* Title */
 
 .landing h1 {
   font-size: 46px;
   margin-bottom: 20px;
   font-weight: 700;
 }
+
+/* Description */
 
 .landing p {
   font-size: 17px;
@@ -28,28 +39,92 @@
   line-height: 1.6;
 }
 
-/* Button container */
+/* Buttons */
+
 .landing-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-/* Primary Button */
+/* Button */
+
 .landing-buttons button {
   padding: 12px 32px;
   border-radius: 10px;
   border: none;
+
   background: #2563eb;
   color: white;
+
   font-size: 15px;
   font-weight: 600;
+
   cursor: pointer;
-  transition: 0.25s ease;
+
+  transition: all 0.25s ease;
 }
+
+/* Hover */
 
 .landing-buttons button:hover {
   background: #1d4ed8;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.03);
+
   box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* ===== Animations ===== */
+
+/* Landing reveal */
+
+@keyframes landingReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(5px);
+  }
+
+  60% {
+    opacity: 0.7;
+    transform: translateY(10px);
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Content slide */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 34px;
+  }
+
+  .landing p {
+    font-size: 15px;
+  }
+
+  .landing-buttons button {
+    width: 100%;
+  }
 }
