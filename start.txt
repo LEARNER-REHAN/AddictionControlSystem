@@ -4,3 +4,11 @@ uvicorn main:app --reload
 
 brew services start mongodb-community
 mongodb://localhost:27017
+
+
+python -m venv venv
+.\venv\Scripts\Activate
+pip install fastapi uvicorn pymongo bcrypt
+
+
+pip install python-dotenv
