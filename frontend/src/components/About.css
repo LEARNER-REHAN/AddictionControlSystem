@@ -3,10 +3,10 @@
   padding: 40px;
   border-radius: 12px;
 }
-
-/* ===================== */
-/* HEADING */
-/* ===================== */
+/* 
+/===================== /
+/ HEADING /
+/ ===================== / */
 
 .team-heading {
   text-align: center;
@@ -16,9 +16,9 @@
   color: #1e293b;
 }
 
-/* ===================== */
-/* TEAM CARD */
-/* ===================== */
+/* / ===================== /
+/ TEAM CARD /
+/ ===================== / */
 
 .team-card {
   position: relative;
@@ -35,7 +35,9 @@
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 
-  transition: all 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 
   overflow: hidden;
 
@@ -66,9 +68,9 @@
   }
 }
 
-/* ===================== */
-/* NEON WAVE LIGHT */
-/* ===================== */
+/* / ===================== /
+/ NEON WAVE LIGHT /
+/ ===================== / */
 
 .team-card::before {
   content: "";
@@ -83,7 +85,7 @@
   background: radial-gradient(circle, rgba(37, 99, 235, 0.2), transparent 60%);
 
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .team-card:hover::before {
@@ -100,19 +102,18 @@
   }
 }
 
-/* ===================== */
-/* CARD HOVER */
-/* ===================== */
+/* / ===================== /
+/ CARD HOVER /
+/ ===================== / */
 
 .team-card:hover {
   transform: translateY(-12px) scale(1.02) rotateX(2deg) rotateY(-2deg);
-
   box-shadow: 0 20px 60px rgba(37, 99, 235, 0.18);
 }
 
-/* ===================== */
-/* PROFILE IMAGE */
-/* ===================== */
+/* / ===================== /
+/ PROFILE IMAGE /
+/ ===================== / */
 
 .team-card img {
   width: 120px;
@@ -123,10 +124,12 @@
 
   border: 4px solid #2563eb;
 
-  transition: all 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
-
-/* glowing pulse */
+/* 
+/ glowing pulse / */
 
 .team-card:hover img {
   transform: scale(1.08);
@@ -158,9 +161,9 @@
   }
 }
 
-/* ===================== */
-/* INFO */
-/* ===================== */
+/* / ===================== /
+/ INFO /
+/ ===================== / */
 
 .team-info {
   flex: 1;
@@ -182,9 +185,9 @@
   color: #475569;
 }
 
-/* ===================== */
-/* CONTACT LINKS */
-/* ===================== */
+/* / ===================== /
+/ CONTACT LINKS /
+/ ===================== / */
 
 .contact-links {
   margin-top: 12px;
@@ -203,10 +206,16 @@
   color: #2563eb;
   font-weight: 500;
 
-  transition: all 0.3s ease;
-}
+  will-change: transform;
 
-/* button hover */
+  transition:
+    background 0.12s ease,
+    color 0.12s ease,
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+/* 
+/ button hover / */
 
 .contact-links a:hover {
   background: #2563eb;
@@ -217,9 +226,9 @@
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
 
-/* ===================== */
-/* MOBILE */
-/* ===================== */
+/* / ===================== /
+/ MOBILE /
+/ =====================  */
 
 @media (max-width: 768px) {
   .team-card {
