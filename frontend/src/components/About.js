@@ -13,7 +13,7 @@ function About() {
       role: "Full-Stack Developer",
       desc: "Designed UI, dashboard and overall user experience.",
       img: rehanImg,
-      email: "mailto:skrehanislam12@email.com",
+      email: "mailto:skrehanislam12@gmail.com",
       phone: "tel:+918348109468",
       linkedin: "https://www.linkedin.com/in/sk-rehan-islam-b6a3122b9/",
     },
