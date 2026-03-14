@@ -5,6 +5,7 @@ import rehanImg from "../assets/rehan.png";
 import atulyaImg from "../assets/atulya.png";
 import harshImg from "../assets/harsh.png";
 import rohitImg from "../assets/rohit.png";
+import noopurImg from "../assets/noopur mam.png";
 
 function About() {
   const developers = [
@@ -44,6 +45,15 @@ function About() {
       phone: "tel:+911234567890",
       linkedin: "https://linkedin.com/in/rohit",
     },
+    {
+      name: "Noopur Dass",
+      role: "Mentor Support",
+      desc: "Guide us to build this project and our beautiful mentor",
+      img: noopurImg,
+      email: "mailto:soec.noopur@dbuu.ac.in",
+      phone: "+91 81262 00597",
+      linkedin: "https://www.linkedin.com/in/noopur-dass-aba3b882/",
+    }
   ];
 
   return (
